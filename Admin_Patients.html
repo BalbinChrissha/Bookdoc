@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/AdminStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/5066b12b5a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Appointment Final</title>
+    <link rel="icon" href="Images/logoside.png">
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="Images/logoside.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Bookdoc</span>
+                    <span class="profession">Admin</span>
+
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+
+                <li class="nav-link">
+                    <a href="Admin_Dashboard.html">
+                        <i class='bx bx-home-alt icon'></i>
+                        <span class="text nav-text">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="Admin_Doctors.html">
+                        <i class='bx bxs-user-plus icon'></i>
+                        <span class="text nav-text">Doctors</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="Admin_Patients.html">
+                        <i class='bx bxs-user icon'></i>
+                        <span class="text nav-text">Patients</span>
+                    </a>
+                </li>
+
+
+
+
+
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="Admin_Login.html">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+
+        <div class="cont">
+            <div class="text">
+                <h3><b>View Patients</b></h3>
+            </div>
+
+            <div class="container">
+
+                <div class="col">
+                    <div class="p-3 border bg-light" id="box1">
+                        <h5><b>4,500 Patients</b></h5>
+
+                        <br>
+
+                        <div class="col-sm-12 mb-3 ">
+
+                            <div class="who1" style="overflow-x:auto;">
+                                <table class="table caption-top" id="tableapp">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Patient Name</th>
+                                            <th scope="col">Sex</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Phone</th>
+                                            <th scope="col">Joining</th>
+                                            <th scope="col">Birth Date</th>
+                                            <th scope="col">User ID</th>
+                                            <th scope="col">Actions</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault"></th>
+
+                                            </td>
+
+                                            <td onclick="location.href='Admin_UserProf1.html';">
+                                                <div class="cir">M</div>
+                                            </td>
+                                            <td onclick="location.href='Admin_UserProf1.html';">Chrissha Balbin</td>
+                                            <td onclick="location.href='Admin_UserProf1.html';">Female</td>
+                                            <td onclick="location.href='Admin_UserProf1.html';">may@email.com</td>
+                                            <td onclick="location.href='Admin_UserProf1.html';">09123456789</td>
+                                            <td onclick="location.href='Admin_UserProf1.html';">04/01/2022</td>
+                                            <td onclick="location.href='Admin_UserProf1.html';">05/03/2003</td>
+                                            <td onclick="location.href='Admin_UserProf1.html';">0122456789</td>
+                                            <td> <button type="button" class="btn2" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop">
+                                                    <i class="fa-solid fa-pen-to-square" id="mods"></i>
+                                                </button> <span class="space">n</span>
+                                                <button type="button" class="btn2" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop3"><i class="fa-solid fa-trash-can"
+                                                        id="mods1"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <tr onclick="location.href='#';">
+                                            <th scope="row"><input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault"></th>
+                                            <td>
+                                                <div class="cir">J</div>
+                                            </td>
+                                            <td>Jom Dunno</td>
+                                            <td>Female</td>
+                                            <td>jom@email.com</td>
+                                            <td>09123456124</td>
+                                            <td>06/17/2022</td>
+                                            <td>28/03/2000</td>
+                                            <td>1122456789</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen-to-square" id="mods"></i>
+                                                <span class="space">n</span>
+                                                <i class="fa-solid fa-trash-can" id="mods1">
+                                            </td>
+                                        </tr>
+
+                                        <tr onclick="location.href='#';">
+                                            <th scope="row"><input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault"></th>
+                                            <td>
+                                                <div class="cir">J</div>
+                                            </td>
+                                            <td>Jnor Cubes</td>
+                                            <td>Femle</td>
+                                            <td>jnor@email.com</td>
+                                            <td>09123247789</td>
+                                            <td>06/17/2022</td>
+                                            <td>15/11/1990</td>
+                                            <td>1222456789</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen-to-square" id="mods"></i>
+                                                <span class="space">n</span>
+                                                <i class="fa-solid fa-trash-can" id="mods1">
+                                            </td>
+                                        </tr>
+
+                                        <tr onclick="location.href='#';">
+                                            <th scope="row"><input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault"></th>
+                                            <td>
+                                                <div class="cir">K</div>
+                                            </td>
+                                            <td>Ken Cruz</td>
+                                            <td>Male</td>
+                                            <td>ken@email.com</td>
+                                            <td>09123247789</td>
+                                            <td>03/11/2021</td>
+                                            <td>15/11/1990</td>
+                                            <td>1322456789</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen-to-square" id="mods"></i>
+                                                <span class="space">n</span>
+                                                <i class="fa-solid fa-trash-can" id="mods1">
+                                            </td>
+                                        </tr>
+
+                                        <tr onclick="location.href='#';">
+                                            <th scope="row"><input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault"></th>
+                                            <td>
+                                                <div class="cir">J</div>
+                                            </td>
+                                            <td>Jerk Kamatayan</td>
+                                            <td>Male</td>
+                                            <td>jerk@email.com</td>
+                                            <td>09123247789</td>
+                                            <td>06/07/2022</td>
+                                            <td>15/11/1990</td>
+                                            <td>1422456789</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen-to-square" id="mods"></i>
+                                                <span class="space">n</span>
+                                                <i class="fa-solid fa-trash-can" id="mods1">
+                                            </td>
+                                        </tr>
+
+                                        <tr onclick="location.href='#';">
+                                            <th scope="row"><input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault"></th>
+                                            <td>
+                                                <div class="cir">M</div>
+                                            </td>
+                                            <td>Mich Kinina</td>
+                                            <td>Female</td>
+                                            <td>mich@email.com</td>
+                                            <td>09123247789</td>
+                                            <td>06/12/2020</td>
+                                            <td>17/10/1996</td>
+                                            <td>1522456789</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen-to-square" id="mods"></i>
+                                                <span class="space">n</span>
+                                                <i class="fa-solid fa-trash-can" id="mods1">
+                                            </td>
+                                        </tr>
+
+                                        <tr onclick="location.href='#';">
+                                            <th scope="row"><input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault"></th>
+                                            <td>
+                                                <div class="cir">A</div>
+                                            </td>
+                                            <td>Aliana Ewan</td>
+                                            <td>Female</td>
+                                            <td>aliana@email.com</td>
+                                            <td>09123247789</td>
+                                            <td>05/17/2022</td>
+                                            <td>15/11/2004</td>
+                                            <td>1662456789</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen-to-square" id="mods"></i>
+                                                <span class="space">n</span>
+                                                <i class="fa-solid fa-trash-can" id="mods1">
+                                            </td>
+                                        </tr>
+
+
+                                        <tr onclick="location.href='#';">
+                                            <th scope="row"><input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault"></th>
+                                            <td>
+                                                <div class="cir">B</div>
+                                            </td>
+                                            <td>Bitchesa Ngan</td>
+                                            <td>Female</td>
+                                            <td>bitch@email.com</td>
+                                            <td>09100247789</td>
+                                            <td>28/02/2022</td>
+                                            <td>22/06/2008</td>
+                                            <td>1762456789</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen-to-square" id="mods"></i>
+                                                <span class="space">n</span>
+                                                <i class="fa-solid fa-trash-can" id="mods1">
+                                            </td>
+                                        </tr>
+
+                                        <tr onclick="location.href='#';">
+                                            <th scope="row"><input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault"></th>
+                                            <td>
+                                                <div class="cir">C</div>
+                                            </td>
+                                            <td>Chrissha Ganda</td>
+                                            <td>Female</td>
+                                            <td>chrissha@email.com</td>
+                                            <td>09222247789</td>
+                                            <td>06/17/2022</td>
+                                            <td>15/11/1990</td>
+                                            <td>1862456789</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen-to-square" id="mods"></i>
+                                                <span class="space">n</span>
+                                                <i class="fa-solid fa-trash-can" id="mods1">
+                                            </td>
+                                        </tr>
+
+                                        <tr onclick="location.href='#';">
+                                            <th scope="row"><input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault"></th>
+                                            <td>
+                                                <div class="cir">M</div>
+                                            </td>
+                                            <td>May Saltik</td>
+                                            <td>Female</td>
+                                            <td>may@email.com</td>
+                                            <td>09222247789</td>
+                                            <td>01/01/2022</td>
+                                            <td>14/11/1995</td>
+                                            <td>1962456789</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen-to-square" id="mods"></i>
+                                                <span class="space">n</span>
+                                                <i class="fa-solid fa-trash-can" id="mods1">
+                                            </td>
+                                        </tr>
+
+                                        <tr onclick="location.href='#';">
+                                            <th scope="row"><input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault"></th>
+                                            <td>
+                                                <div class="cir">B</div>
+                                            </td>
+                                            <td>Baby Damulag</td>
+                                            <td>Female</td>
+                                            <td>baby@email.com</td>
+                                            <td>09222247789</td>
+                                            <td>29/12/2021</td>
+                                            <td>15/11/1990</td>
+                                            <td>1012456789</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen-to-square" id="mods"></i>
+                                                <span class="space">n</span>
+                                                <i class="fa-solid fa-trash-can" id="mods1">
+                                            </td>
+                                        </tr>
+
+                                        <tr onclick="location.href='#';">
+                                            <th scope="row"><input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault"></th>
+                                            <td>
+                                                <div class="cir">C</div>
+                                            </td>
+                                            <td>Cassie Howard</td>
+                                            <td>Female</td>
+                                            <td>neverb@email.com</td>
+                                            <td>09222247789</td>
+                                            <td>17/02/2022</td>
+                                            <td>15/11/1990</td>
+                                            <td>2162456789</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen-to-square" id="mods"></i>
+                                                <span class="space">n</span>
+                                                <i class="fa-solid fa-trash-can" id="mods1">
+                                            </td>
+                                        </tr>
+
+                                        <tr onclick="location.href='#';">
+                                            <th scope="row"><input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault"></th>
+                                            <td>
+                                                <div class="cir">M</div>
+                                            </td>
+                                            <td>Maddy Perez</td>
+                                            <td>Female</td>
+                                            <td>maddy@email.com</td>
+                                            <td>09222247789</td>
+                                            <td>06/11/2021</td>
+                                            <td>28/11/2000</td>
+                                            <td>2362456789</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen-to-square" id="mods"></i>
+                                                <span class="space">n</span>
+                                                <i class="fa-solid fa-trash-can" id="mods1">
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="num">
+                                            <div class="num1">
+                                                <a href="#">
+                                                    <div class="num3">1</div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="num2">2</div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="num2">3</div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="num2">4</div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="num2">5</div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="num2">6</div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="num2">7</div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="num2">8</div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="num2">9</div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="num2">10</div>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6" align="right"> <span class="f6">
+                                            < <button type="button" onclick="window.location.href='#'" class="btn4">
+                                                ></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <!-----------------------------end of cont------------------------------->
+            <br>
+            <center>
+                <hr style="height:2px; width: 95%;border-width:0;color:gray;background-color:gray">
+            </center>
+
+
+        </div>
+
+        <div class="navii">
+
+            <nav class="navbar navbar-light navbar-expand-md">
+                <div class="container-fluid"><a class="navbar-brand"></a>
+                    <div id="navcol-1">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="copy">
+                                ⓒ 2022 Bookdoc
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+    </section>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                        <h3><b>Patient Form</b></h3>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" onsubmit="myFunction()">
+                        Patient's Name
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <input type="text" class="form-control " placeholder="First" value="Chrissha" required>
+                            </div>
+
+                            <div class="col-sm-6 mb-3">
+                                <input type="text" class="form-control " placeholder="Last" value="Balbin" required>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control form-control-sm" value="may@email.com" required>
+                            </div>
+
+                            <div class="col-sm-6 mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Number</label>
+                                <input type="tel" class="form-control form-control-sm" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="0912-345-6789" value="0912-345-6789"
+                                    pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <label class="form-label">Joining Date</label>
+                                <input type="date" class="form-control form-control-sm" value="2022-01-04" required>
+                            </div>
+
+                            <!--<div class="col-sm-6 mb-3">
+                                <label class="form-label">Time</label>
+                                <input type="text" class="form-control " placeholder="Last" value="10:00 am" required>
+                            </div>-->
+
+                            <div class="col-sm-6 mb-3">
+                                <label class="form-label">Birth Date</label>
+                                <input type="date" class="form-control form-control-sm" value="2003-03-05" required>
+                            </div>
+                        </div>
+
+
+
+
+                        Patient's sex assigned at birth
+                        <div class="who">
+
+
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <input type="radio" class="form-check-input" id="may" name="mayy" required checked>
+                                    Female
+                                </div>
+
+                                <div class="col-sm-6 mb-3">
+                                    <input type="radio" class="form-check-input" id="may" name="mayy" required> Male
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-12 mb-3 ">
+
+                            <label class="form-label">User ID</label>
+                            <input type="text" class="form-control " placeholder="Last" value="0122456789" required>
+                        </div>
+                        <!----bodyyyyy-->
+                        <div class="row">
+                            <div class="col-sm-3 mb-3"> <button type="submit" class="btn btn-primary"
+                                    data-bs-dismiss="modal">Save</button>
+                            </div>
+                            <div class="col-sm-3 mb-3"><button type="button" class="btn btn-danger"
+                                    data-bs-dismiss="modal">Cancel</button></div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel" align="center">
+                        <div class="mods1">
+                            <h2><b>Delete<br>
+                                    Are you sure?</b></h2>
+                            <br>Deleting this will delete patient's record
+                        </div>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <center>
+                        <h5>Too many cancelled, rescheduled and/or no-showing to appointments? Lock account now! </h5>
+
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger"
+                        onclick="window.location.href='Admin_Patients.html'">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel" align="center">
+                    <div class="mods"><img src="Images/doc2.png"><br>
+                        <h2><b>Appointment booked!</b></h2>
+                    </div>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <center><span class="calendar1"><i class="fa-regular fa-calendar"></i></span><br>
+                   <h5> You're scheduled with <br> <b>Dr. Andrea Budol, MD</b> <br> on <b>Friday, June 17 at 10:00
+                        am</b></h5>
+                        <br>
+                        A confirmation email and text were sent with Reference Number. Check your inboxes now :)
+
+                </center>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="window.location.href='User_Acc.html'">Understood</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+        function myFunction() {
+            alert("Your Changes Have Been Saved!!!");
+        }
+
+
+        const body = document.querySelector('body'),
+            sidebar = body.querySelector('nav'),
+            toggle = body.querySelector(".toggle"),
+            searchBtn = body.querySelector(".search-box"),
+            modeSwitch = body.querySelector(".toggle-switch"),
+            modeText = body.querySelector(".mode-text");
+
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        })
+
+        searchBtn.addEventListener("click", () => {
+            sidebar.classList.remove("close");
+        })
+
+
+
+    </script>
+
+
+</body>
+
+</html>
