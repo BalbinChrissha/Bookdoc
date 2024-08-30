@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .scrolling-text-container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            opacity: 0;
+        }
+
+        .scrolling-text {
+            font-size: 24px;
+            white-space: nowrap;
+            position: relative;
+            animation: slideIn 3s ease forwards;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="firstdiv" style="background-color: aqua; height: 500px;"></div>
+    <div class="scrolling-text-container" id="scrolling-text-container">
+        <div class="scrolling-text">
+            This is some text sliding in from the left side as you scroll down.
+            <br>The artifacts that EA should produce are defined by this type
+            Other Types of EA Frameworks (based on its specialization)
+            <br>
+            1. Consortia-developed frameworks<br>
+            - A Reference of Collaborative Networks (ARCON)<br>
+        </div>
+    </div>
+
+    <script>
+        const scrollingTextContainer = document.getElementById("scrolling-text-container");
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    scrollingTextContainer.style.opacity = 1;
+                    scrollingTextContainer.classList.add("start-animation");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        observer.observe(scrollingTextContainer);
+    </script>
+</body>
+</html>
